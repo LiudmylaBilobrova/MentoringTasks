@@ -58,6 +58,39 @@ namespace Task_1
             }
             Console.ReadLine();
 
+            // Finding max value
+            int maxValue = arrayOfRandomNumbers[0];
+            for (int i = 0; i < arrayOfRandomNumbers.Length; i++)
+            {
+                if (arrayOfRandomNumbers[i] > maxValue)
+                {
+                    maxValue = arrayOfRandomNumbers[i];
+                }
+            }
+            Console.WriteLine("Max value of array is {0}", maxValue);
+            Console.ReadLine();
+
+            // Finding min value
+            int minValue = arrayOfRandomNumbers[0];
+            for (int i = 0; i < arrayOfRandomNumbers.Length; i++)
+            {
+                if (arrayOfRandomNumbers[i] < minValue)
+                {
+                    minValue = arrayOfRandomNumbers[i];
+                }
+            }
+            Console.WriteLine("Min value of array is {0}", minValue);
+            Console.ReadLine();
+
+            // Finding average value
+            int sum = 0;
+            for (int i = 0; i < arrayOfRandomNumbers.Length; i++)
+            {
+                sum += arrayOfRandomNumbers[i];
+            }
+            int averageValue = sum / arrayOfRandomNumbers.Length;
+            Console.WriteLine("Average value of array is {0}", averageValue);
+            Console.ReadLine();
         }
     }
 }
