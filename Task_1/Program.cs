@@ -25,6 +25,7 @@ namespace Task_1
             int arrayLenth = int.Parse(Console.ReadLine());
 
             int[] arrayOfRandomNumbers = new int[arrayLenth];
+
             Random rand = new Random();
 
             // Filling array with random values
@@ -37,19 +38,19 @@ namespace Task_1
             Console.ReadLine();
 
             // Sorting array by bubble method
-            for (int i = 0; i < arrayLenth-1; i++)
+            for (int i = 0; i < arrayOfRandomNumbers.Length - 1; i++)
             {
-                for (int j = i +1; j < arrayLenth; j++)
+                for (int j = i +1; j < arrayOfRandomNumbers.Length; j++)
                 {
-                    if (i > j)
+                    if (arrayOfRandomNumbers[i] > arrayOfRandomNumbers[j])
                     {
-                        int m = i;
-                        i = j;
-                        j = m;
+                        int m = arrayOfRandomNumbers[i];
+                        arrayOfRandomNumbers[i] = arrayOfRandomNumbers[j];
+                        arrayOfRandomNumbers[j] = m;
                     }
                 }
             }
-            // Preinting sorted array
+            // Printing sorted array
             Console.WriteLine("Sorted array:");
             for (int i = 0; i < arrayLenth; i++)
             {
