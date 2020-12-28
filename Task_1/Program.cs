@@ -20,15 +20,15 @@ namespace Task_1
     {
         static void Main(string[] args)
         {
-            // Запрос на введення будь-якого числа
-            Console.WriteLine("Введіть довжину масива");
+            // Request for entering a number
+            Console.WriteLine("Enter array lenth");
             int arrayLenth = int.Parse(Console.ReadLine());
 
             int[] arrayOfRandomNumbers = new int[arrayLenth];
             Random rand = new Random();
 
-            // Заповнення масиву рандомними значеннями
-            Console.WriteLine("Вміст масива рандомних значень від 0 до 9999:");
+            // Filling array with random values
+            Console.WriteLine("Array with random values from 0 to 9999:");
             for (int i = 0; i < arrayLenth; i++)
             {
                 arrayOfRandomNumbers[i] = rand.Next(0, 9999);
@@ -36,7 +36,7 @@ namespace Task_1
             }
             Console.ReadLine();
 
-            // Сортування масиву методом бульбашки
+            // Sorting array by bubble method
             for (int i = 0; i < arrayLenth-1; i++)
             {
                 for (int j = i +1; j < arrayLenth; j++)
@@ -49,8 +49,8 @@ namespace Task_1
                     }
                 }
             }
-            // Виведення відсортованого масиву
-            Console.WriteLine("Відсортований масив:");
+            // Preinting sorted array
+            Console.WriteLine("Sorted array:");
             for (int i = 0; i < arrayLenth; i++)
             {
                 Console.WriteLine(arrayOfRandomNumbers[i]);
