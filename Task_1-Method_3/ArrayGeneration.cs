@@ -4,17 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Task_1_Method_2
+namespace Task_1_Method_3
 {
     class ArrayGeneration
     {
-        public void GenerateArray()
+        private static void GenerateArray(out int arrayLenth, out int[] arrayOfRandomNumbers)
         {
+            // Request for entering a number
             Console.WriteLine("Enter array lenth");
-            int arrayLenth = int.Parse(Console.ReadLine());
-
-            int[] arrayOfRandomNumbers = new int[arrayLenth];
-
+            arrayLenth = int.Parse(Console.ReadLine());
+            arrayOfRandomNumbers = new int[arrayLenth];
             Random rand = new Random();
 
             // Filling array with random values
@@ -26,7 +25,5 @@ namespace Task_1_Method_2
             }
             Console.ReadLine();
         }
-
-
     }
 }

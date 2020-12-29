@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C63F3860-BC54-4489-B1C5-E67B3DDD28B2}</ProjectGuid>
+    <ProjectGuid>{C2CD24EF-6499-4C45-AA2D-0EE6A9C776F6}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Task_1_Method_2</RootNamespace>
-    <AssemblyName>Task_1-Method_2</AssemblyName>
+    <RootNamespace>Task_1_Method_3</RootNamespace>
+    <AssemblyName>Task_1-Method_3</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,6 +42,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ArrayGeneration.cs" />
+    <Compile Include="ArraySorting.cs" />
+    <Compile Include="MaxMinAvgValues.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
